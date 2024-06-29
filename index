@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Band Name - Classic Hard Rock</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333333;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        nav {
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #333333;
+            padding: 10px;
+            text-align: center;
+        }
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Band Name</h1>
+        <p>Classic Hard Rock</p>
+    </header>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#music">Our Music</a>
+        <a href="#tour">Tour Dates</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a classic hard rock band dedicated to bringing the timeless sounds of rock to new and old fans alike. Our music is inspired by the great rock legends and infused with our own unique style.</p>
+    </section>
+    <section id="music">
+        <h2>Our Music</h2>
+        <p>Check out our latest tracks and albums. Stay tuned for more rocking hits!</p>
+        <!-- Embed music player or links to music platforms -->
+    </section>
+    <section id="tour">
+        <h2>Tour Dates</h2>
+        <p>Catch us live at a venue near you! Stay updated with our tour schedule.</p>
+        <!-- List upcoming tour dates and locations -->
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Follow us on social media and stay connected:</p>
+        <footer>
+            <a href="https://facebook.com/yourband" target="_blank">Facebook</a>
+            <a href="https://twitter.com/yourband" target="_blank">Twitter</a>
+            <a href="https://instagram.com/yourband" target="_blank">Instagram</a>
+        </footer>
+    </section>
+</body>
+</html>
