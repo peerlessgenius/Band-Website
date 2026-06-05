@@ -101,7 +101,7 @@ export const members = [
     image: "/assets/member-placeholder-2.jpg",
   },
   {
-    name: "Vocalist",
+    name: "Sara",
     role: "Vocal",
     description: "Adds harmonies, lead moments and extra crowd energy on stage.",
     image: "/assets/member-placeholder-6.jpg",
