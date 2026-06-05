@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: #0a0807;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(177, 32, 26, 0.22), transparent 34rem),
+    radial-gradient(circle at 85% 10%, rgba(214, 159, 72, 0.12), transparent 28rem),
+    #0a0807;
+}
+
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  content: "";
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), transparent 80%);
+}
+
+@layer components {
+  .section-shell {
+    @apply mx-auto w-full max-w-7xl px-5 py-20 sm:px-8 lg:px-10;
+  }
+
+  .eyebrow {
+    @apply text-xs font-bold uppercase tracking-[0.28em] text-amber-300;
+  }
+
+  .section-title {
+    @apply mt-3 max-w-3xl text-3xl font-black uppercase leading-tight text-white sm:text-4xl lg:text-5xl;
+  }
+
+  .section-copy {
+    @apply mt-5 max-w-3xl text-base leading-8 text-stone-300 sm:text-lg;
+  }
+
+  .metal-card {
+    @apply border border-white/10 bg-zinc-950/70 shadow-[0_0_45px_rgba(0,0,0,0.45)] backdrop-blur;
+  }
+
+  .accent-button {
+    @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-md bg-red-700 px-5 py-3 text-sm font-black uppercase tracking-[0.14em] text-white shadow-[0_0_28px_rgba(185,28,28,0.35)] transition hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-stone-950;
+  }
+
+  .outline-button {
+    @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-md border border-amber-300/60 px-5 py-3 text-sm font-black uppercase tracking-[0.14em] text-amber-100 transition hover:border-amber-200 hover:bg-amber-300/10 focus:outline-none focus:ring-2 focus:ring-amber-300 focus:ring-offset-2 focus:ring-offset-stone-950;
+  }
+}
